@@ -31,10 +31,10 @@ Bot = Client(
     api_hash=os.environ.get("API_HASH","c25bda5d2624db06db8a1624d4e484ce")
 )
 
-START_TEXT = """**Hi{} 
+START_TEXT = """**Hi {} 
 I am small media or file to telegra.ph link uploader bot.**
 
->> `I can convert under 5MB photo or video to telegraph link.`
+ I can convert under 5MB photo or video to telegraph link.
 
 Made by @knoxprojects"""
 
