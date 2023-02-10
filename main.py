@@ -1,4 +1,4 @@
-#©( aaceknox )
+#©aceknox 
 import os
 import time
 import math
@@ -26,7 +26,7 @@ db = Database(DATABASE_URL, "Telegraph-Uploader-Bot")
 
 Bot = Client(
     "Telegraph Uploader Bot",
-    bot_token=os.environ.get("BOT_TOKEN","5836641197:6045837548:AAHEW6Ih1qN_2DgE75DJd4jQOump1aSM0gE"),
+    bot_token=os.environ.get("BOT_TOKEN","6045837548:AAHEW6Ih1qN_2DgE75DJd4jQOump1aSM0gE"),
     api_id=int(os.environ.get("API_ID","28457125")),
     api_hash=os.environ.get("API_HASH","c25bda5d2624db06db8a1624d4e484ce")
 )
