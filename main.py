@@ -193,13 +193,13 @@ async def telegraph_upload(bot, update):
         await db.add_user(update.from_user.id)
     
     text = await update.reply_text(
-        text="<code>Downloading ...</code>",
+        text="Downloading...",
         disable_web_page_preview=True
     )
     media = await update.download()
     
     await text.edit_text(
-        text="<code>Downloading Completed. Now I am Uploading to telegra.ph Link ...</code>",
+        text="Downloading Completed. Now I am Uploading to telegra.ph Link...",
         disable_web_page_preview=True
     )
     
@@ -220,7 +220,7 @@ async def telegraph_upload(bot, update):
         return
     
     await text.edit_text(
-        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @knoxprojects",
+        text=f"<b>Link :-</b> <code>https://telegra.ph{response[0]}</code>\n\n<b>Join :-</b> @knoxsupport",
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
