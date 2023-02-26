@@ -1,4 +1,4 @@
-pyrogram==1.9
+pyrogram==1.9.0
 tgcrypto
 telegraph
 motor
