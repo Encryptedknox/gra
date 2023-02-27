@@ -28,8 +28,8 @@ db = Database(DATABASE_URL, "Telegraph-Uploader-Bot")
 Bot = Client(
     "Telegraph Uploader Bot",
     bot_token=os.environ.get("BOT_TOKEN","5836641197:AAFn6rJE1tLGnbP947OK7wHLGhw26cBIxeM"),
-    api_id=int(os.environ.get("API_ID","28457125")),
-    api_hash=os.environ.get("API_HASH","c25bda5d2624db06db8a1624d4e484ce")
+    api_id=int(os.environ.get("API_ID","15673531")),
+    api_hash=os.environ.get("API_HASH","fc1b24e1970b13359d3f3e95b2d6de55")
 )
 
 START_TEXT = """**Hi {} 
