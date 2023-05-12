@@ -1,8 +1,22 @@
-FROM python:3.11.2
+FROM python:3.10-slim-buster
 
-WORKDIR . .
-COPY . .
+RUN apt update && apt upgrade -y
 
-RUN pip3 install -U -r requirements.txt
+RUN apt install git -y
 
-CMD python3 main.py
+COPY requirements.txt /requirements.txt
+
+RUN cd /
+
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+
+RUN mkdir /gra
+
+WORKDIR /Eva
+
+COPY start.sh /start.sh
+
+CMD ["/bin/bash", "/start.sh"]
+
+
+
